@@ -3,7 +3,7 @@ Final-project-laplace2 created by GitHub Classroom
 
 IEOR 4571, Columbia University - Personalization Theory and applications \
 Course project - Recommender system for movielens dataset\
-\
+
 
 # Objective
 In this project, we build an ensemble of models such as Factorization Machines, SVD followed by ANN and Neural Collaborative Filtering etc. We will predict movie ratings provided by users in the MovieLens data set and recommend the top 10 movies to a user based on defined business objectives. 
