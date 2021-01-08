@@ -18,8 +18,11 @@ Steps:
   ![Architecture1](https://github.com/jayshah1397/MovieLens-Recommmendation/blob/main/images/Architecture1.png?raw=true)
 
   * Architecture_2 - Serialized model (SVD,ANN,NCF) - Run /Architecture Pipeline/Architecture_2_(pipeline_0)_.ipynb for architecture 2
+  ![Architecture1](https://github.com/jayshah1397/MovieLens-Recommmendation/blob/main/images/Architecture1_part1.png?raw=true)
+
   * Content Based Recommendation - Used metadata of movies and ratings like genres and reviews to extract vector embeddings using Doc2Vec to identify similar movies. Run - /Content Based Recommendation/Content_Based_Recommendation.ipynb 
 3. Evaluate : We evaluated models using 
+ * accuracy and utility measures like Normalised Discounted Cummulative Gain (NDCG), Precision-recall at k, mean average precision (MAP), user and catalog coverage and novelty (using Expected Popularity Complement) 
 
 File structure: 
 
