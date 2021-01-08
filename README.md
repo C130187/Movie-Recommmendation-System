@@ -11,6 +11,16 @@ Group members:
 3. Neeraj Ramkumar (nr2728@columbia.ed)
 4. Saloni Gupta (sg3910@columbia.edu)
 
+Steps:
+1. Prepare data : We sample ~20,000 users and ~1000 movies based on rating timestamp. Run Exploratory_Data_Analysis_and_Data_Sampling.ipynb to create sample dataset as well EDA
+2. Model : We tried 2 architectures and a content based recommendation to address cold-start of new movies:
+  * Architecture_1 - Hybrid model of serialized (Singular value Decomposition (SVD), Approximate nearest neighbours (ANN), Neural Collaborative Filtering (NCF) using log loss) and Factorized Machines (FM) using Weighted Approximately Ranked Pairwise (WARP) Ranking Loss - Run /Architecture Pipeline/Architecture_1_(pipeline_0)_.ipynb for architecture 1
+  ![Architecture1](https://github.com/jayshah1397/MovieLens-Recommmendation/blob/main/images/Architecture1.png?raw=true)
+
+  * Architecture_2 - Serialized model (SVD,ANN,NCF) - Run /Architecture Pipeline/Architecture_2_(pipeline_0)_.ipynb for architecture 2
+  * Content Based Recommendation - Used metadata of movies and ratings like genres and reviews to extract vector embeddings using Doc2Vec to identify similar movies. Run - /Content Based Recommendation/Content_Based_Recommendation.ipynb 
+3. Evaluate : We evaluated models using 
+
 File structure: 
 
 * Architecture Pipeline/Architecture_1_pipeline_0 - Pipeline for architecture 1 - hybrid model of serialized (SVD,ANN,NCF) and FM
